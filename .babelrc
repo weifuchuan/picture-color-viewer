@@ -1,0 +1,45 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": 7
+        },
+        "useBuiltIns": true
+      }
+    ],
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "add-module-exports"
+  ],
+  "env": {
+    "production": {
+      "presets": [
+        "react-optimize"
+      ],
+      "plugins": [
+        "dev-expression"
+      ]
+    },
+    "development": {
+      "plugins": [
+        "transform-class-properties",
+        "transform-es2015-classes",
+        [
+          "module-resolver",
+          {
+            "alias": {
+              "app": "./app",
+              "main": "./app/main",
+              "renderer": "./app/renderer",
+              "common": "./app/common"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}

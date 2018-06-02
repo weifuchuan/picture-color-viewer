@@ -1,0 +1,17 @@
+{
+  "name": "picture-color-viewer",
+  "productName": "picture-color-viewer",
+  "version": "1.0.0",
+  "description": "picture-color-viewer",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "Wei Fuchuan",
+    "email": "fuchuan.wei@hotmail.com"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r babel-register ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "npm run electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
