@@ -4,7 +4,7 @@ import { observer, inject } from "mobx-react";
 import { remote } from "electron";
 import { Tabs, Input, Card, Button, InputNumber } from "antd";
 import ModalLoading from "renderer/components/ModalLoading";
-import Color from "common/model/Color";
+import Color from "common/model/ColorTS";
 
 export default inject("store")(observer(
   class App extends React.Component {

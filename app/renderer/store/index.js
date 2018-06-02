@@ -61,6 +61,6 @@ autorun(() => {
   }
 });
 
-store.currentImg = "file://E:/QQ下载/MobileFile/-15df049f2e6fa240.jpg";
+// store.currentImg = "file://E:/QQ下载/MobileFile/-15df049f2e6fa240.jpg";
 
 export default store;
